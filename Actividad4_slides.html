@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Activity 4 visual aid</title>
+<style>
+  :root {
+    --paper: #f7f4ee;
+    --ink: #14110d;
+    --rule: #c4bcac;
+    --muted: #6b6459;
+    --accent: #a8391e;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; height: 100%;
+    background: var(--paper); color: var(--ink);
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+    overflow: hidden;
+  }
+  #fit { position: fixed; inset: 0; display: grid; place-items: center; }
+  #stage {
+    width: min(100vw, calc(100vh * 16 / 9));
+    height: min(100vh, calc(100vw * 9 / 16));
+    container-type: size;
+    position: relative;
+  }
+  section { position: absolute; inset: 0; padding: 5.6cqw 6.25cqw 4.4cqw;
+            display: none; flex-direction: column; }
+  section.on { display: flex; }
+
+  h1 { font-size: 3.6cqw; font-weight: 400; letter-spacing: -0.01em; margin: 0 0 0.5cqw; }
+  .sub { color: var(--muted); font-size: 1.56cqw; margin: 0 0 2.7cqw; max-width: 64cqw; line-height: 1.45; }
+
+  /* five V's: unequal rows on a single hairline rhythm */
+  dl { margin: 0; }
+  dl div { display: grid; grid-template-columns: 16.4cqw 1fr; gap: 2.2cqw;
+           padding: 1.35cqw 0; border-top: 1px solid var(--rule); align-items: baseline; }
+  dl div:first-child { border-top: 0; padding-top: 0; }
+  dt { font-size: 2.34cqw; }
+  dd { margin: 0; font-size: 1.64cqw; color: var(--muted); line-height: 1.4; }
+  dl div:nth-child(2) dd, dl div:nth-child(4) dd { max-width: 50cqw; }
+
+  .four p { margin: 0; padding: 1.6cqw 0; border-top: 1px solid var(--rule);
+            font-size: 1.72cqw; line-height: 1.45; max-width: 81cqw; }
+  .four p:first-child { border-top: 0; }
+  .four b { font-weight: 400; border-bottom: 1px solid var(--ink); padding-bottom: 0.1cqw; }
+
+  svg { display: block; width: 100%; flex: 1 1 auto; min-height: 0; }
+  .bx { fill: none; stroke: #14110d; stroke-width: 1; }
+  .bx-a { fill: none; stroke: #a8391e; stroke-width: 1.5; }
+  .lbl { font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif; font-size: 21px; fill: #14110d; }
+  .lbl-a { font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif; font-size: 21px; fill: #a8391e; }
+  .glo { font-family: Consolas, "Cascadia Mono", monospace; font-size: 13px; fill: #6b6459; }
+  .glo-a { font-family: Consolas, "Cascadia Mono", monospace; font-size: 13px; fill: #a8391e; }
+  .arw { stroke: #14110d; stroke-width: 1; fill: none; }
+  .arw-d { stroke: #6b6459; stroke-width: 1; fill: none; stroke-dasharray: 4 4; }
+
+  #num { position: absolute; right: 6.25cqw; bottom: 2cqw;
+         font-family: Consolas, monospace; font-size: 1.1cqw; color: var(--muted); }
+</style>
+</head>
+<body>
+<div id="fit"><div id="stage">
+
+<section class="on">
+  <h1>The data engineering pipeline</h1>
+  <p class="sub">Raw data moves left to right. Every stage is a place where the data changes shape, owner, or guarantee.</p>
+  <svg viewBox="0 0 1120 322">
+    <defs><marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L8,4 L0,8" fill="none" stroke="#14110d" stroke-width="1"/></marker></defs>
+
+    <rect class="bx" x="20"  y="26" width="150" height="124"/>
+    <text class="lbl" x="38"  y="66">Sources</text>
+    <text class="glo" x="38"  y="98">OLTP databases</text>
+    <text class="glo" x="38"  y="120">sensors, SaaS</text>
+
+    <rect class="bx" x="194" y="26" width="158" height="124"/>
+    <text class="lbl" x="212" y="66">Ingestion</text>
+    <text class="glo" x="212" y="98">APIs: one system</text>
+    <text class="glo" x="212" y="120">asks another</text>
+
+    <rect class="bx" x="376" y="26" width="158" height="124"/>
+    <text class="lbl" x="394" y="66">Data lake</text>
+    <text class="glo" x="394" y="98">raw, any format</text>
+    <text class="glo" x="394" y="120">schema read later</text>
+
+    <rect class="bx" x="558" y="26" width="182" height="124"/>
+    <text class="lbl" x="576" y="66">Transform</text>
+    <text class="glo" x="576" y="98">ETL: clean then load</text>
+    <text class="glo" x="576" y="120">ELT: load then clean</text>
+
+    <rect class="bx" x="764" y="26" width="158" height="124"/>
+    <text class="lbl" x="782" y="66">Warehouse</text>
+    <text class="glo" x="782" y="98">modeled, governed</text>
+    <text class="glo" x="782" y="120">query ready</text>
+
+    <rect class="bx" x="946" y="26" width="154" height="124"/>
+    <text class="lbl" x="964" y="66">Consumption</text>
+    <text class="glo" x="964" y="98">BI, models,</text>
+    <text class="glo" x="964" y="120">applications</text>
+
+    <path class="arw" marker-end="url(#a)" d="M172,88 H191"/>
+    <path class="arw" marker-end="url(#a)" d="M354,88 H373"/>
+    <path class="arw" marker-end="url(#a)" d="M536,88 H555"/>
+    <path class="arw" marker-end="url(#a)" d="M742,88 H761"/>
+    <path class="arw" marker-end="url(#a)" d="M924,88 H943"/>
+
+    <rect class="bx" x="20" y="208" width="1080" height="86"/>
+    <text class="lbl" x="38" y="246">Metadata</text>
+    <text class="glo" x="38" y="274">data about the data: schema, lineage, ownership, freshness. Spans every stage above.</text>
+  </svg>
+</section>
+
+<section>
+  <h1>When it becomes big data</h1>
+  <p class="sub">Five properties, any of which can break a pipeline that worked fine at small scale.</p>
+  <dl>
+    <div><dt>Volume</dt><dd>How much there is to store and scan.</dd></div>
+    <div><dt>Velocity</dt><dd>How fast it arrives, and how fresh the answer has to be. A fraud check has a different budget than a monthly report.</dd></div>
+    <div><dt>Variety</dt><dd>Tables, logs, images, free text, all landing in the same lake.</dd></div>
+    <div><dt>Veracity</dt><dd>How much of it can be trusted: duplicates, drift, sensors that fail silently.</dd></div>
+    <div><dt>Value</dt><dd>Whether any of the above pays for the infrastructure it takes to hold it.</dd></div>
+  </dl>
+</section>
+
+<section>
+  <h1>Where the models plug in</h1>
+  <p class="sub">Data science picks up where the warehouse leaves off. The marked block is the only part that learns.</p>
+  <svg viewBox="0 0 1120 322">
+    <defs><marker id="b" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L8,4 L0,8" fill="none" stroke="#14110d" stroke-width="1"/></marker>
+      <marker id="c" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L8,4 L0,8" fill="none" stroke="#6b6459" stroke-width="1"/></marker></defs>
+
+    <rect class="bx" x="22"  y="22" width="160" height="130"/>
+    <text class="lbl" x="40"  y="62">Warehouse</text>
+    <text class="glo" x="40"  y="94">clean, modeled</text>
+    <text class="glo" x="40"  y="116">tables</text>
+
+    <rect class="bx" x="206" y="22" width="180" height="130"/>
+    <text class="lbl" x="224" y="62">Exploration</text>
+    <text class="glo" x="224" y="94">EDA, feature</text>
+    <text class="glo" x="224" y="116">engineering</text>
+
+    <rect class="bx-a" x="410" y="22" width="320" height="130"/>
+    <text class="lbl-a" x="428" y="58">Modeling</text>
+    <text class="glo-a" x="428" y="88">machine learning: learns from the</text>
+    <text class="glo-a" x="428" y="108">features an analyst built</text>
+    <text class="glo-a" x="428" y="136">deep learning: learns the features</text>
+
+    <rect class="bx" x="754" y="22" width="160" height="130"/>
+    <text class="lbl" x="772" y="62">Serving</text>
+    <text class="glo" x="772" y="94">batch scores or</text>
+    <text class="glo" x="772" y="116">a live endpoint</text>
+
+    <rect class="bx" x="938" y="22" width="160" height="130"/>
+    <text class="lbl" x="956" y="62">Monitoring</text>
+    <text class="glo" x="956" y="94">drift, decay,</text>
+    <text class="glo" x="956" y="116">business impact</text>
+
+    <path class="arw" marker-end="url(#b)" d="M184,86 H203"/>
+    <path class="arw" marker-end="url(#b)" d="M388,86 H407"/>
+    <path class="arw" marker-end="url(#b)" d="M732,86 H751"/>
+    <path class="arw" marker-end="url(#b)" d="M916,86 H935"/>
+
+    <path class="arw-d" marker-end="url(#c)" d="M1018,154 V216 H296 V158"/>
+    <text class="glo" x="440" y="240">when performance decays, the loop reopens at feature engineering</text>
+    <text class="glo-a" x="410" y="296">deep learning is a subset of machine learning, so it sits inside the same block</text>
+  </svg>
+</section>
+
+<section>
+  <h1>CRISP-DM</h1>
+  <p class="sub">The process wrapper around all of the above. It is a cycle, and the arrow back from evaluation is the one people forget.</p>
+  <svg viewBox="0 0 1120 270">
+    <defs><marker id="d" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L8,4 L0,8" fill="none" stroke="#14110d" stroke-width="1"/></marker>
+      <marker id="e" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L8,4 L0,8" fill="none" stroke="#6b6459" stroke-width="1"/></marker></defs>
+
+    <rect class="bx" x="20"  y="24" width="166" height="96"/>
+    <text class="lbl" x="38"  y="62">Business</text><text class="lbl" x="38" y="92">understanding</text>
+
+    <rect class="bx" x="206" y="24" width="166" height="96"/>
+    <text class="lbl" x="224" y="62">Data</text><text class="lbl" x="224" y="92">understanding</text>
+
+    <rect class="bx" x="392" y="24" width="166" height="96"/>
+    <text class="lbl" x="410" y="62">Data</text><text class="lbl" x="410" y="92">preparation</text>
+
+    <rect class="bx" x="578" y="24" width="166" height="96"/>
+    <text class="lbl" x="596" y="78">Modeling</text>
+
+    <rect class="bx" x="764" y="24" width="166" height="96"/>
+    <text class="lbl" x="782" y="78">Evaluation</text>
+
+    <rect class="bx" x="950" y="24" width="150" height="96"/>
+    <text class="lbl" x="968" y="78">Deployment</text>
+
+    <path class="arw" marker-end="url(#d)" d="M188,72 H203"/>
+    <path class="arw" marker-end="url(#d)" d="M374,72 H389"/>
+    <path class="arw" marker-end="url(#d)" d="M560,72 H575"/>
+    <path class="arw" marker-end="url(#d)" d="M746,72 H761"/>
+    <path class="arw" marker-end="url(#d)" d="M932,72 H947"/>
+
+    <path class="arw-d" marker-end="url(#e)" d="M847,122 V182 H103 V126"/>
+    <text class="glo" x="300" y="212">evaluation can send the project back to the business question, not just to the model</text>
+  </svg>
+</section>
+
+<section>
+  <h1>Four words that get used interchangeably</h1>
+  <p class="sub">They describe different jobs, and in most companies different people.</p>
+  <div class="four">
+    <p><b>Data engineering</b> builds and operates the pipeline on the first slide. Its output is reliable, documented data that somebody else can use.</p>
+    <p><b>Data mining</b> searches data that already exists for patterns worth knowing. It starts from the data and asks what is in here.</p>
+    <p><b>Data science</b> starts from a business question, then answers it with statistics, models and judgement about what the answer is worth.</p>
+    <p><b>Machine learning</b> is the family of algorithms that improve from examples instead of from written rules. Data science reaches for it when a question is predictive; the rest of the time a query or a regression table is enough.</p>
+  </div>
+</section>
+
+<div id="num"></div>
+</div></div>
+
+<script>
+  const slides = [...document.querySelectorAll('section')];
+  const num = document.getElementById('num');
+  let i = 0;
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle('on', k === i));
+    num.textContent = (i + 1) + ' / ' + slides.length;
+  }
+  addEventListener('keydown', e => {
+    if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(e.key)) { show(i + 1); e.preventDefault(); }
+    if (['ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) { show(i - 1); e.preventDefault(); }
+  });
+  addEventListener('click', () => show(i + 1));
+  show(0);
+</script>
+</body>
+</html>
