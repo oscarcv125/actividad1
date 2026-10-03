@@ -1,0 +1,45 @@
+{
+  "archivo_fuente": "corpus_auditoria_v2.csv",
+  "sha256_fuente": "58dc79d2defd187d86307bd0b2f3f21d60ac4ffe3362dc9ecd5062d1f817e37a",
+  "python": "3.14.4",
+  "pandas": "3.0.5",
+  "spacy": "3.8.16",
+  "tokenizador": "spacy.blank(\"es\")",
+  "semilla": 42,
+  "reparto_familias": {
+    "acceso": [
+      10,
+      3,
+      2
+    ],
+    "pagos": [
+      11,
+      2,
+      2
+    ]
+  },
+  "politica": {
+    "aplicar": [
+      "NFC",
+      "colapsar espacios y quitar los de los bordes",
+      "URL a URL_OCULTA",
+      "correo a CORREO_OCULTO"
+    ],
+    "conservar": [
+      "mayúsculas",
+      "acentos y ñ",
+      "puntuación",
+      "números y moneda",
+      "emojis",
+      "stopwords y negación"
+    ],
+    "clave_duplicados": "NFC, espacios y minúsculas sobre text_original; misma etiqueta",
+    "cuarentena": [
+      "texto nulo, vacío o de solo espacios",
+      "menos de 3 palabras",
+      "etiqueta ausente",
+      "familia con etiquetas contradictorias"
+    ],
+    "nulos": "se exportan como __NULO__; al recargar usar keep_default_na=False y na_values=['__NULO__']"
+  }
+}

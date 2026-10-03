@@ -1,0 +1,12 @@
+id,text_original,text_processed,label,family,split
+AUD-010,  La  sesión  caducó  mientras  trabajaba.  ,La sesión caducó mientras trabajaba.,acceso,F004,test
+AUD-011,"Buen día, la sesión caducó mientras trabajaba. ¿Me pueden orientar?","Buen día, la sesión caducó mientras trabajaba. ¿Me pueden orientar?",acceso,F004,test
+AUD-012,"La sesión caducó mientras trabajaba; ya reinicié y sigue igual, urge tantito.","La sesión caducó mientras trabajaba; ya reinicié y sigue igual, urge tantito.",acceso,F004,test
+AUD-019,  El  portal  rechaza  mi  nombre  de  usuario.  ,El portal rechaza mi nombre de usuario.,acceso,F007,test
+AUD-020,"Buen día, el portal rechaza mi nombre de usuario. ¿Me pueden orientar?","Buen día, el portal rechaza mi nombre de usuario. ¿Me pueden orientar?",acceso,F007,test
+AUD-046,  Solicito  un  reembolso  por  un  cargo  equivocado.  ,Solicito un reembolso por un cargo equivocado.,pagos,F016,test
+AUD-047,"Buen día, solicito un reembolso por un cargo equivocado. ¿Me pueden orientar?","Buen día, solicito un reembolso por un cargo equivocado. ¿Me pueden orientar?",pagos,F016,test
+AUD-048,"Solicito un reembolso por un cargo equivocado; ya reinicié y sigue igual, urge tantito.","Solicito un reembolso por un cargo equivocado; ya reinicié y sigue igual, urge tantito.",pagos,F016,test
+AUD-055,  El  importe  no  coincide  con  la  cotización.  ,El importe no coincide con la cotización.,pagos,F019,test
+AUD-056,"Buen día, el importe no coincide con la cotización. ¿Me pueden orientar?","Buen día, el importe no coincide con la cotización. ¿Me pueden orientar?",pagos,F019,test
+AUD-057,"El importe no coincide con la cotización; ya reinicié y sigue igual, urge tantito.","El importe no coincide con la cotización; ya reinicié y sigue igual, urge tantito.",pagos,F019,test

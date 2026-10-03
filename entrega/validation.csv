@@ -1,0 +1,16 @@
+id,text_original,text_processed,label,family,split
+AUD-022,Quiero recuperar acceso después de cambiar de celular.,Quiero recuperar acceso después de cambiar de celular.,acceso,F008,validation
+AUD-023,"Buen día, quiero recuperar acceso después de cambiar de celular. ¿Me pueden orientar?","Buen día, quiero recuperar acceso después de cambiar de celular. ¿Me pueden orientar?",acceso,F008,validation
+AUD-024,"Quiero recuperar acceso después de cambiar de celular; ya reinicié y sigue igual, urge tantito.","Quiero recuperar acceso después de cambiar de celular; ya reinicié y sigue igual, urge tantito.",acceso,F008,validation
+AUD-031,Mi contraseña nueva no se acepta.,Mi contraseña nueva no se acepta.,acceso,F011,validation
+AUD-032,"Buen día, mi contraseña nueva no se acepta. ¿Me pueden orientar?","Buen día, mi contraseña nueva no se acepta. ¿Me pueden orientar?",acceso,F011,validation
+AUD-033,"Mi contraseña nueva no se acepta; ya reinicié y sigue igual, urge tantito.","Mi contraseña nueva no se acepta; ya reinicié y sigue igual, urge tantito.",acceso,F011,validation
+AUD-067,La factura tiene un impuesto incorrecto.,La factura tiene un impuesto incorrecto.,pagos,F023,validation
+AUD-068,"Buen día, la factura tiene un impuesto incorrecto. ¿Me pueden orientar?","Buen día, la factura tiene un impuesto incorrecto. ¿Me pueden orientar?",pagos,F023,validation
+AUD-069,"La factura tiene un impuesto incorrecto; ya reinicié y sigue igual, urge tantito.","La factura tiene un impuesto incorrecto; ya reinicié y sigue igual, urge tantito.",pagos,F023,validation
+AUD-074,No quiero cancelar mi cuenta. Solo necesito cambiar la contraseña.,No quiero cancelar mi cuenta. Solo necesito cambiar la contraseña.,acceso,F025,validation
+AUD-075,NO quiero cancelar mi cuenta; necesito recuperar el acceso.,NO quiero cancelar mi cuenta; necesito recuperar el acceso.,acceso,F025,validation
+AUD-076,"Quiero mantener mi cuenta y cambiar la contraseña, gracias.","Quiero mantener mi cuenta y cambiar la contraseña, gracias.",acceso,F025,validation
+AUD-077,"Pagué $1,250.50 y la factura muestra $1,520.50. ¿Pueden revisarla?","Pagué $1,250.50 y la factura muestra $1,520.50. ¿Pueden revisarla?",pagos,F026,validation
+AUD-078,El importe de 1250.50 pesos no coincide con mi factura.,El importe de 1250.50 pesos no coincide con mi factura.,pagos,F026,validation
+AUD-079,  Mi  factura  del  pedido  4821  tiene  un  importe  incorrecto.  ,Mi factura del pedido 4821 tiene un importe incorrecto.,pagos,F026,validation

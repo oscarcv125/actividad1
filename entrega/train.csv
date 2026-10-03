@@ -1,0 +1,62 @@
+id,text_original,text_processed,label,family,split
+AUD-001,  Olvidé  la  contraseña  y  necesito  restablecerla.  ,Olvidé la contraseña y necesito restablecerla.,acceso,F001,train
+AUD-002,"Buen día, olvidé la contraseña y necesito restablecerla. ¿Me pueden orientar?","Buen día, olvidé la contraseña y necesito restablecerla. ¿Me pueden orientar?",acceso,F001,train
+AUD-003,"Olvidé la contraseña y necesito restablecerla; ya reinicié y sigue igual, urge tantito.","Olvidé la contraseña y necesito restablecerla; ya reinicié y sigue igual, urge tantito.",acceso,F001,train
+AUD-004,El código de verificación no llega a mi correo.,El código de verificación no llega a mi correo.,acceso,F002,train
+AUD-005,"Buen día, el código de verificación no llega a mi correo. ¿Me pueden orientar?","Buen día, el código de verificación no llega a mi correo. ¿Me pueden orientar?",acceso,F002,train
+AUD-006,"El código de verificación no llega a mi correo; ya reinicié y sigue igual, urge tantito.","El código de verificación no llega a mi correo; ya reinicié y sigue igual, urge tantito.",acceso,F002,train
+AUD-007,Mi cuenta quedó bloqueada después de varios intentos.,Mi cuenta quedó bloqueada después de varios intentos.,acceso,F003,train
+AUD-008,"Buen día, mi cuenta quedó bloqueada después de varios intentos. ¿Me pueden orientar?","Buen día, mi cuenta quedó bloqueada después de varios intentos. ¿Me pueden orientar?",acceso,F003,train
+AUD-009,"Mi cuenta quedó bloqueada después de varios intentos; ya reinicié y sigue igual, urge tantito.","Mi cuenta quedó bloqueada después de varios intentos; ya reinicié y sigue igual, urge tantito.",acceso,F003,train
+AUD-014,"Buen día, no puedo entrar con el segundo factor. ¿Me pueden orientar?","Buen día, no puedo entrar con el segundo factor. ¿Me pueden orientar?",acceso,F005,train
+AUD-015,"No puedo entrar con el segundo factor; ya reinicié y sigue igual, urge tantito.","No puedo entrar con el segundo factor; ya reinicié y sigue igual, urge tantito.",acceso,F005,train
+AUD-016,El enlace para activar mi usuario expiró.,El enlace para activar mi usuario expiró.,acceso,F006,train
+AUD-017,"Buen día, el enlace para activar mi usuario expiró. ¿Me pueden orientar?","Buen día, el enlace para activar mi usuario expiró. ¿Me pueden orientar?",acceso,F006,train
+AUD-018,"El enlace para activar mi usuario expiró; ya reinicié y sigue igual, urge tantito.","El enlace para activar mi usuario expiró; ya reinicié y sigue igual, urge tantito.",acceso,F006,train
+AUD-025,La página regresa al inicio de sesión sin avisar.,La página regresa al inicio de sesión sin avisar.,acceso,F009,train
+AUD-026,"Buen día, la página regresa al inicio de sesión sin avisar. ¿Me pueden orientar?","Buen día, la página regresa al inicio de sesión sin avisar. ¿Me pueden orientar?",acceso,F009,train
+AUD-027,"La página regresa al inicio de sesión sin avisar; ya reinicié y sigue igual, urge tantito.","La página regresa al inicio de sesión sin avisar; ya reinicié y sigue igual, urge tantito.",acceso,F009,train
+AUD-028,  El  autenticador  muestra  un  código  inválido.  ,El autenticador muestra un código inválido.,acceso,F010,train
+AUD-029,"Buen día, el autenticador muestra un código inválido. ¿Me pueden orientar?","Buen día, el autenticador muestra un código inválido. ¿Me pueden orientar?",acceso,F010,train
+AUD-030,"El autenticador muestra un código inválido; ya reinicié y sigue igual, urge tantito.","El autenticador muestra un código inválido; ya reinicié y sigue igual, urge tantito.",acceso,F010,train
+AUD-034,El correo de recuperación pertenece a mi cuenta anterior.,El correo de recuperación pertenece a mi cuenta anterior.,acceso,F012,train
+AUD-035,"Buen día, el correo de recuperación pertenece a mi cuenta anterior. ¿Me pueden orientar?","Buen día, el correo de recuperación pertenece a mi cuenta anterior. ¿Me pueden orientar?",acceso,F012,train
+AUD-036,"El correo de recuperación pertenece a mi cuenta anterior; ya reinicié y sigue igual, urge tantito.","El correo de recuperación pertenece a mi cuenta anterior; ya reinicié y sigue igual, urge tantito.",acceso,F012,train
+AUD-037,  Me  cobraron  dos  veces  la  misma  factura.  ,Me cobraron dos veces la misma factura.,pagos,F013,train
+AUD-038,"Buen día, me cobraron dos veces la misma factura. ¿Me pueden orientar?","Buen día, me cobraron dos veces la misma factura. ¿Me pueden orientar?",pagos,F013,train
+AUD-039,"Me cobraron dos veces la misma factura; ya reinicié y sigue igual, urge tantito.","Me cobraron dos veces la misma factura; ya reinicié y sigue igual, urge tantito.",pagos,F013,train
+AUD-040,Necesito el comprobante del pago del mes.,Necesito el comprobante del pago del mes.,pagos,F014,train
+AUD-041,"Buen día, necesito el comprobante del pago del mes. ¿Me pueden orientar?","Buen día, necesito el comprobante del pago del mes. ¿Me pueden orientar?",pagos,F014,train
+AUD-042,"Necesito el comprobante del pago del mes; ya reinicié y sigue igual, urge tantito.","Necesito el comprobante del pago del mes; ya reinicié y sigue igual, urge tantito.",pagos,F014,train
+AUD-043,La tarjeta fue rechazada al renovar.,La tarjeta fue rechazada al renovar.,pagos,F015,train
+AUD-044,"Buen día, la tarjeta fue rechazada al renovar. ¿Me pueden orientar?","Buen día, la tarjeta fue rechazada al renovar. ¿Me pueden orientar?",pagos,F015,train
+AUD-045,"La tarjeta fue rechazada al renovar; ya reinicié y sigue igual, urge tantito.","La tarjeta fue rechazada al renovar; ya reinicié y sigue igual, urge tantito.",pagos,F015,train
+AUD-049,El depósito no aparece en el saldo.,El depósito no aparece en el saldo.,pagos,F017,train
+AUD-050,"Buen día, el depósito no aparece en el saldo. ¿Me pueden orientar?","Buen día, el depósito no aparece en el saldo. ¿Me pueden orientar?",pagos,F017,train
+AUD-051,"El depósito no aparece en el saldo; ya reinicié y sigue igual, urge tantito.","El depósito no aparece en el saldo; ya reinicié y sigue igual, urge tantito.",pagos,F017,train
+AUD-052,Quiero corregir el RFC de mi factura.,Quiero corregir el RFC de mi factura.,pagos,F018,train
+AUD-053,"Buen día, quiero corregir el RFC de mi factura. ¿Me pueden orientar?","Buen día, quiero corregir el RFC de mi factura. ¿Me pueden orientar?",pagos,F018,train
+AUD-054,"Quiero corregir el RFC de mi factura; ya reinicié y sigue igual, urge tantito.","Quiero corregir el RFC de mi factura; ya reinicié y sigue igual, urge tantito.",pagos,F018,train
+AUD-058,Necesito cambiar mi método de pago.,Necesito cambiar mi método de pago.,pagos,F020,train
+AUD-059,"Buen día, necesito cambiar mi método de pago. ¿Me pueden orientar?","Buen día, necesito cambiar mi método de pago. ¿Me pueden orientar?",pagos,F020,train
+AUD-060,"Necesito cambiar mi método de pago; ya reinicié y sigue igual, urge tantito.","Necesito cambiar mi método de pago; ya reinicié y sigue igual, urge tantito.",pagos,F020,train
+AUD-061,La suscripción figura como vencida aunque pagué.,La suscripción figura como vencida aunque pagué.,pagos,F021,train
+AUD-062,"Buen día, la suscripción figura como vencida aunque pagué. ¿Me pueden orientar?","Buen día, la suscripción figura como vencida aunque pagué. ¿Me pueden orientar?",pagos,F021,train
+AUD-063,"La suscripción figura como vencida aunque pagué; ya reinicié y sigue igual, urge tantito.","La suscripción figura como vencida aunque pagué; ya reinicié y sigue igual, urge tantito.",pagos,F021,train
+AUD-064,  El  banco  confirmó  el  cargo  pero  no  tengo  recibo.  ,El banco confirmó el cargo pero no tengo recibo.,pagos,F022,train
+AUD-065,"Buen día, el banco confirmó el cargo pero no tengo recibo. ¿Me pueden orientar?","Buen día, el banco confirmó el cargo pero no tengo recibo. ¿Me pueden orientar?",pagos,F022,train
+AUD-066,"El banco confirmó el cargo pero no tengo recibo; ya reinicié y sigue igual, urge tantito.","El banco confirmó el cargo pero no tengo recibo; ya reinicié y sigue igual, urge tantito.",pagos,F022,train
+AUD-070,Quiero saber cuándo regresará el dinero a mi tarjeta.,Quiero saber cuándo regresará el dinero a mi tarjeta.,pagos,F024,train
+AUD-071,"Buen día, quiero saber cuándo regresará el dinero a mi tarjeta. ¿Me pueden orientar?","Buen día, quiero saber cuándo regresará el dinero a mi tarjeta. ¿Me pueden orientar?",pagos,F024,train
+AUD-072,"Quiero saber cuándo regresará el dinero a mi tarjeta; ya reinicié y sigue igual, urge tantito.","Quiero saber cuándo regresará el dinero a mi tarjeta; ya reinicié y sigue igual, urge tantito.",pagos,F024,train
+AUD-080,Necesito información para recuperar mi contraseña.,Necesito información para recuperar mi contraseña.,acceso,F027,train
+AUD-082,¿Cómo recupero mi contraseña? Necesito información.,¿Cómo recupero mi contraseña? Necesito información.,acceso,F027,train
+AUD-083,Envíen la factura a persona@example.invalid; el cargo sigue pendiente.,Envíen la factura a CORREO_OCULTO; el cargo sigue pendiente.,pagos,F028,train
+AUD-084,Mi correo es cobros@example.invalid. Necesito el recibo del pago.,Mi correo es CORREO_OCULTO. Necesito el recibo del pago.,pagos,F028,train
+AUD-085,La factura en https://soporte.example.invalid/factura?id=4821 no abre.,La factura en URL_OCULTA no abre.,pagos,F028,train
+AUD-092,Este año cambié de teléfono y perdí acceso a mi cuenta.,Este año cambié de teléfono y perdí acceso a mi cuenta.,acceso,F031,train
+AUD-093,"Sí, quiero mantener la cuenta; necesito una nueva contraseña.","Sí, quiero mantener la cuenta; necesito una nueva contraseña.",acceso,F031,train
+AUD-094,"Si cambio de teléfono, ¿cómo recupero mi cuenta?","Si cambio de teléfono, ¿cómo recupero mi cuenta?",acceso,F031,train
+AUD-095,¡Otra vez un cobro doble! 😠 Necesito que revisen la factura.,¡Otra vez un cobro doble! 😠 Necesito que revisen la factura.,pagos,F032,train
+AUD-096,"Mi pago ya aparece, gracias 🙂. ¿Dónde descargo el comprobante?","Mi pago ya aparece, gracias 🙂. ¿Dónde descargo el comprobante?",pagos,F032,train
+AUD-097,"No puedo ver mi facutra del mes, ¿me ayudan?","No puedo ver mi facutra del mes, ¿me ayudan?",pagos,F032,train
